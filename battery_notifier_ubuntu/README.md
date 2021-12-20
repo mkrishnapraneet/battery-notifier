@@ -1,16 +1,14 @@
 # README
 
-Created: December 20, 2021 4:55 PM
-Description (Project Name): For Battery Notifier
-Last Edited Time: December 21, 2021 12:35 AM
-Status: In Progress
-Type: README
+# README
 
-# Battery Notifier (Windows)
+Created: December 20, 2021 4:55 PM Description (Project Name): For Battery Notifier Last Edited Time: December 21, 2021 12:35 AM Status: In Progress Type: README
+
+# Battery Notifier (Ubuntu)
 
 ## Description :
 
-Battery Notifier (Windows) is an application designed to work on a Windows PC. Once you run the application, it notifies you when : 
+Battery Notifier (Ubuntu) is an application designed to work on a Linux PC. Once you run the application, it notifies you when :
 
 1. Your Laptop battery is charging and the battery level is above the level you set
 2. Your Laptop battery is discharging and the battery level is below the level you set
@@ -23,9 +21,9 @@ I used Python to program this application, and made an .exe file out of it. Impo
 
 ## How to run :
 
-To run the application, simply : 
+To run the application, simply :
 
-battery_notifier_windows → battery.exe
+battery_notifier_ubuntu →  dist → battery.out
 
 In the dialog box that appears, set the lower bound and upper bound for battery percentage in their respective fields. Type in only integers between 0-100, without any other symbols (like ‘%’ for example). Also make sure lower bound is actually lower than the higher bound. After this, click ‘Apply’.
 
@@ -33,12 +31,12 @@ Now, the application runs in the background, and a new dialog box appears. Use t
 
 ## Note :
 
-It is to be noted that, sometimes, antivirus software might flag the application or any part of this as malware. (I experienced this issue personally, but I assure you, there is no malware in the program). I later found out that this flagging might be caused due to the use of pyinstaller to make an executable from the python script, or could also be due to the use of icon. Both these processes are malware -free. 
+It is to be noted that, sometimes, antivirus software might flag the application or any part of this as malware. (I experienced this issue personally, but I assure you, there is no malware in the program). I later found out that this flagging might be caused due to the use of pyinstaller to make an executable from the python script, or could also be due to the use of icon. Both these processes are malware -free.
 
-But if you are a cautious programmer, feel free to make an .exe file yourself from the python script named ‘battery.py’. Go through the code and make sure for yourself that this is safe. The command I used to turn this into an .exe file is 
+But if you are a cautious programmer, feel free to make an .exe file yourself from the python script named ‘battery.py’. Go through the code and make sure for yourself that this is safe. The command I used to turn this into an .exe file is
 
-```markdown
-pyinstaller --onefile battery.py --hidden-import plyer.platforms.win.notification --windowed
+```
+pyinstaller --onefile battery.py --hidden-import plyer.platforms.linux.notification --windowed
 ```
 
 (This assumes you have the required python setup for this)
