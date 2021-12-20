@@ -1,9 +1,5 @@
 # README
 
-# README
-
-Created: December 20, 2021 4:55 PM Description (Project Name): For Battery Notifier Last Edited Time: December 21, 2021 12:35 AM Status: In Progress Type: README
-
 # Battery Notifier (Ubuntu)
 
 ## Description :
