@@ -10,16 +10,13 @@ from threading import *
 import os
 import sys
 
+# function to exit from the application when called
 
 def quit_prog():
     # sys.exit()
     os._exit(1)
 
-
-def on_close():
-    if messagebox.askokcancel("Quit", "Do you want to quit?"):
-        window.destroy()
-
+# opens a new dialog box and has options to close the application in it
 
 def the_close():
     last_window = tkinter.Tk()
@@ -38,20 +35,21 @@ def the_close():
 
     last_window.mainloop()
 
+# raise an error message when called
 
 def error():
     messagebox.showerror(
         "Error", "The values you have entered are not correct.")
 
+# starts a thread for running the gui
 
 def threading():
     t1 = Thread(target=the_close)
     t1.start()
 
+# called when 'Apply' button is pressed. Checks if the entered values are valid, then proceeds to periodically evaluate the battery status
 
 def callback():
-    # print('The Button Was Clicked!')
-    # lower_lim = int(input("Set Lower Limit for battery percentage : "))
     global lower_lim
     try:
         lower_lim = int(e1.get())
@@ -113,6 +111,7 @@ def callback():
         time.sleep(15)
 
 
+# this section is setting up the main gui using tkinter
 window = tkinter.Tk()
 
 var = StringVar()
@@ -139,7 +138,5 @@ higher_lim = 80
 apply_button = ttk.Button(window, text='Apply', command=callback)
 # print("reached?")
 apply_button.grid(padx=100, pady=50, row=4, column=0)
-
-# window.protocol("WM_DELETE_WINDOW", on_closing(window) )
 
 window.mainloop()

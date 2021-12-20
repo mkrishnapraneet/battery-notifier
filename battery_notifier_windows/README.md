@@ -19,7 +19,7 @@ I used Python to program this application, and made an .exe file out of it. Impo
 
 To run the application, simply : 
 
-battery_notifier_windows → battery.exe
+battery_notifier_windows → dist → battery.exe
 
 In the dialog box that appears, set the lower bound and upper bound for battery percentage in their respective fields. Type in only integers between 0-100, without any other symbols (like ‘%’ for example). Also make sure lower bound is actually lower than the higher bound. After this, click ‘Apply’.
 
