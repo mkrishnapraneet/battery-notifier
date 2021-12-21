@@ -27,7 +27,9 @@ Now, the application runs in the background, and a new dialog box appears. Use t
 
 ## Note :
 
-It is to be noted that, sometimes, antivirus software might flag the application or any part of this as malware. (I experienced this issue personally, but I assure you, there is no malware in the program). I later found out that this flagging might be caused due to the use of pyinstaller to make an executable from the python script, or could also be due to the use of icon. Both these processes are malware -free.
+It is to be noted that, sometimes, antivirus software might flag the application or any part of this as malware. (I experienced this issue personally, but I assure you, there is no malware in the program). I later found out that this flagging might be caused due to the use of pyinstaller to make an executable from the python script, or could also be due to the use of icon. Both these processes are malware -free.To confirm, I sent the file to AVG for testing, here is their response : 
+
+![Screenshot (590).png](README%203aff022905dd437389349ddb45eeb74c/Screenshot_(590).png)
 
 But if you are a cautious programmer, feel free to make an .exe file yourself from the python script named ‘battery.py’. Go through the code and make sure for yourself that this is safe. The command I used to turn this into an .exe file is
 

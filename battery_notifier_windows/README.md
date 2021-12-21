@@ -1,5 +1,11 @@
 # README
 
+Created: December 20, 2021 4:55 PM
+Description (Project Name): For Battery Notifier
+Last Edited Time: December 22, 2021 12:50 AM
+Status: In Progress
+Type: README
+
 # Battery Notifier (Windows)
 
 ## Description :
@@ -19,7 +25,7 @@ I used Python to program this application, and made an .exe file out of it. Impo
 
 To run the application, simply : 
 
-battery_notifier_windows → dist → battery.exe
+battery_notifier_windows → battery.exe
 
 In the dialog box that appears, set the lower bound and upper bound for battery percentage in their respective fields. Type in only integers between 0-100, without any other symbols (like ‘%’ for example). Also make sure lower bound is actually lower than the higher bound. After this, click ‘Apply’.
 
@@ -27,7 +33,9 @@ Now, the application runs in the background, and a new dialog box appears. Use t
 
 ## Note :
 
-It is to be noted that, sometimes, antivirus software might flag the application or any part of this as malware. (I experienced this issue personally, but I assure you, there is no malware in the program). I later found out that this flagging might be caused due to the use of pyinstaller to make an executable from the python script, or could also be due to the use of icon. Both these processes are malware -free. 
+It is to be noted that, sometimes, antivirus software might flag the application or any part of this as malware. (I experienced this issue personally, but I assure you, there is no malware in the program). I later found out that this flagging might be caused due to the use of pyinstaller to make an executable from the python script, or could also be due to the use of icon. Both these processes are malware -free. To confirm, I sent the file to AVG for testing, here is their response : 
+
+![Screenshot (590).png](README%203aff022905dd437389349ddb45eeb74c/Screenshot_(590).png)
 
 But if you are a cautious programmer, feel free to make an .exe file yourself from the python script named ‘battery.py’. Go through the code and make sure for yourself that this is safe. The command I used to turn this into an .exe file is 
 
